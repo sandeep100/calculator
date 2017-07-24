@@ -1,0 +1,9 @@
+<h2> Demo Calculatoe</h2>
+<%= form_tag('/perform', method: :post, :remote => true) do %>
+<%= text_field_tag :cal_text,'', :required => true %>
+  <div><%= submit_tag 'Save' %></div>
+<% end %>
+<br/>
+<div id ="show_result" style="display:none">
+
+</div>
